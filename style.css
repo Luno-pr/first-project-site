@@ -93,6 +93,7 @@ body {
   top: 2%;
   width: 384px;
   height: 7vh;
+  max-width: 90vh;
 
   margin: 2% auto 0 auto;
 
@@ -313,6 +314,10 @@ hr {
 
     /* 5. На всякий случай сбрасываем старые отступы слева */
     margin-left: 0;
+  }
+
+  .navbar{
+    top: 5%;
   }
 
   .dowlanoadDiv{
