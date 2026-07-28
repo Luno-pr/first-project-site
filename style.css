@@ -10,19 +10,19 @@ body {
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  height: 180vh;
+  /*height: 180vh;*/
   margin: 0;
   color: white;
 }
 
 .downBg{
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background:
           linear-gradient(rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6)),
           url("assets/page-bottom-bg.jpg");
-  width: 100vh;
+  width: 100%;
+  min-height: 218px;
+  background-size: cover;
+  background-position: center;
 }
 
 .jre{
@@ -69,7 +69,7 @@ body {
   display: flex;
   background: rgba(200, 200, 200, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px rgba(106.17, 106.17, 106.17, 0.43) solid;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   width: 67%;
@@ -81,7 +81,7 @@ body {
 
 .dowlanoadButton{
   display: flex;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px rgba(106.17, 106.17, 106.17, 0.43) solid;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 2%;
@@ -113,7 +113,7 @@ body {
   box-sizing: border-box;
   background: rgba(200, 200, 200, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px rgba(106.17, 106.17, 106.17, 0.43) solid;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border-radius: 35px;
 
@@ -242,6 +242,7 @@ hr {
 .infoSec {
   background-image:
     linear-gradient(rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 1) 100%),
     url("assets/premium-bg.jpg");
   background-size: 95%;
   background-position: 50%;
@@ -252,34 +253,12 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  -webkit-mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 0, 0, 0) 100%
-  );
-
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 0, 0, 0) 100%
-  );
 }
 
 .info {
   background: rgba(200, 200, 200, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px rgba(106.17, 106.17, 106.17, 0.43) solid;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   width: 80%;
@@ -298,7 +277,7 @@ hr {
 .glass {
   background: rgba(200, 200, 200, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px rgba(106.17, 106.17, 106.17, 0.43) solid;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   width: 20%;
