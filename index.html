@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -61,6 +62,33 @@
 
     <hr id="info" />
 
+  <div class="swiper glass-panel">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/screen1.png" alt="Скриншот приложения 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/screen2.png" alt="Скриншот приложения 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/screen3.png" alt="Скриншот приложения 3" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/screen4.png" alt="Скриншот приложения 3" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/screen5.png" alt="Скриншот приложения 3" />
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div style="margin-top: 2%"></div>
+
     <div class="infoSec">
       <div class="info glass-panel">
         <h2>Information about our program</h2>
@@ -70,7 +98,7 @@
             Our program was made to crate tasks, and then complete them. We
             have various themes, modal windows to comfortable using and more!
             Now our app is only for windows (recommend for 11). It is absolutely
-            free, and does not have any pushchairs. Tap to download in
+            free, and does not have any purchases. Tap to download in
             navigation menu at the top of the screen or scroll down.
           </p>
         </div>
@@ -105,6 +133,7 @@
     </div>
     <!-- <div class="hero-bg2"></div> -->
     <!-- Подключаем JavaScript в конце <body> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
