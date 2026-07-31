@@ -15,6 +15,7 @@
   --glass-radius: 12px;
   --glass-radius-lg: 30px;
   --glass-radius-pill: 35px;
+  --glass-bg-hover: rgba(200, 200, 200, 0.3);
 
   /* Разделители */
   --hr-color: rgba(255, 255, 255, 0.2);
@@ -43,7 +44,7 @@ body {
   --swiper-pagination-bullet-inactive-color: #ffffff;
   border-radius: var(--glass-radius-pill);
   padding: 30px;
-  width: 60%;
+  width: 50%;
 }
 
 .swiper-slide {
@@ -58,6 +59,27 @@ body {
   object-fit: contain;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none; !important;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 60px;      /* подбери нужный размер */
+  height: auto;
+  object-fit: contain;
+}
+
+.straight {
+  transform: scaleX(-1);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  scale: 1.1;
+}
+
 .gitHub{
   display: flex;
   margin: 1% auto 0 auto;
@@ -66,6 +88,11 @@ body {
   border-radius: var(--glass-radius-pill);
   justify-content: center;
   align-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.gitHub:hover{
+  background-color: var(--glass-bg-hover);
 }
 
 .gitLogo{
@@ -397,5 +424,8 @@ hr {
   .navbar{
     width: 350px;
     margin-top: 3%;
+  }
+  .swiper{
+    width: 80%;
   }
 }
