@@ -102,7 +102,7 @@ body {
   display: flex;
   margin: 1% auto 0 auto;
   width: 260px;
-  min-height: 6vh;
+  height: 59px;
   border-radius: var(--glass-radius-pill);
   justify-content: center;
   align-content: center;
@@ -245,7 +245,7 @@ h1{
   position: sticky;
   top: 2%;
   width: 390px;
-  height: 7vh;
+  height: 67px;
 
   margin: 1% auto 0 auto;
 
