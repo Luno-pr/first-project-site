@@ -39,6 +39,24 @@ body {
   color: var(--text-color);
 }
 
+.footer{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 1%;
+  width: 30%;
+  border-radius: var(--glass-radius-pill);
+  margin: 0 auto 0 auto;
+  align-content: center;
+  justify-content: center;
+  gap: 20%;
+}
+
+.fRow{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .swiper{
   --swiper-theme-color: rgb(253,72,115);
   --swiper-pagination-bullet-inactive-color: #ffffff;
