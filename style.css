@@ -51,9 +51,32 @@ body {
   gap: 20%;
 }
 
+.ab{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.abI{
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--glass-radius-lg);
+  width: 20%;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.adIm{
+  width: 200px;
+  height: auto;
+  border-radius: var(--glass-radius);
+}
+
 .fRow{
   display: flex;
   flex-direction: column;
+  align-content: center;
   gap: 10px;
 }
 
@@ -445,5 +468,19 @@ hr {
   }
   .swiper{
     width: 80%;
+  }
+  .footer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ab{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .abI{
+    width: 360px;
   }
 }
